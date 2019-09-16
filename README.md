@@ -23,7 +23,7 @@ block:
 
 ```elixir
   set config_providers: [
-    {Wocky.Config.ConfexProvider, []}
+    {ConfexVault.ConfexProvider, []}
   ]
 ```
 
@@ -40,7 +40,7 @@ Set up the Vault prefix for your app. For example, if your secrets are under the
 `secret/my-app` path:
 
 ```elixir
-config :wocky, Wocky.Config.VaultAdapter,
+config :my_app, ConfexVault.VaultAdapter,
   vault_prefix: "secret/my-app"
 ```
 
