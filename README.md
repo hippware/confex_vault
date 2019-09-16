@@ -40,7 +40,7 @@ Set up the Vault prefix for your app. For example, if your secrets are under the
 `secret/my-app` path:
 
 ```elixir
-config :my_app, ConfexVault.VaultAdapter,
+config :confex_vault, ConfexVault.VaultAdapter,
   vault_prefix: "secret/my-app"
 ```
 
